@@ -7,7 +7,6 @@
 <frame name="three" src=""/>
 <frame name="four" src=""/>
 <frame name="five" src=""/>
-<frame name="six" src=""/>
 </frameset>
 <body>
 </body>
