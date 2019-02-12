@@ -1,13 +1,12 @@
 <html>
 <head>
 </head>
-<frameset cols="10%,20%,20%,20%,20%">
+<frameset cols="20%,20%,20%,20%,20%">
 <frame name="one" src="/home/section1/2016CSE053/f1.html"/>
 <frame name="two" src=""/>
 <frame name="three" src=""/>
 <frame name="four" src=""/>
 <frame name="five" src=""/>
-<frame name="six" src=""/>
 </frameset>
 <body>
 </body>
