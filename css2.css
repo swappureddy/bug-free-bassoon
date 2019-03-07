@@ -1,0 +1,13 @@
+div.first{
+background-image:url("bg.jpeg");
+padding:50px;
+border:2px solid black;
+}
+
+div.second{
+background-color:white;
+color:black;
+padding:10px;
+opacity:0.6;
+border:2px solid black;
+}

@@ -1,0 +1,45 @@
+
+li{
+display:inline;
+color:black;
+padding:8px 16px;
+text-decoration:none;
+}
+li:hover{
+background-color:#555;
+color:white;
+}
+body{
+animation-name:example;
+animation-timing-function:linear;
+animation-duration:1s;
+animation-direction:alternate;
+animation-iteration-count:5;
+position:relative;
+}
+
+#grad2{
+background-image:radial-gradient(hotpink,cyan,powderblue,yellow,green);}
+
+#grad3{
+background-image:repeating-radial-gradient(circle,red,orange,yellow,blue,indigo,violet);
+}
+div{
+width:250px;
+height:250px;
+transition:width 2s,height 2s,transform 2s;
+
+}
+div:hover{
+width:500px;
+height:500px;
+transform:skewy(180deg);
+}
+
+@keyframes example{
+0% {background-color:red;left:0px;top:0px;}
+25% {background-color:yellow;left:200px;top:0px;}
+50% {background-color:blue;left:200px;top:200px;}
+75% {background-color:green;left:0px;top:200px;}
+100% {background-color:red;left:0px;top:0px;}
+}
