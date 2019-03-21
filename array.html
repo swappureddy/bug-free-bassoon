@@ -1,0 +1,86 @@
+<html>
+<head>
+<script>
+function add(b)
+{
+document.write(b[i]);
+}
+var myarray=new Array();
+var mularray=new Array([2],[3]);
+var max1=prompt("enter limit");
+var linebreak="<br />";
+for(i=0;i<max1;i++)
+{
+myarray[i]=Number(prompt("enter items"));
+}
+for(i=0;i<max1;i++)
+{
+document.write(myarray[i]);
+document.write(linebreak);
+}
+document.write("sorted elements are:");
+document.write(linebreak);
+//myarray.sort();
+var temp;
+for(i=0;i<max1;i++)
+{
+for(j=0;j<max1;j++)
+{
+if (myarray[i]<myarray[j])
+{
+temp=myarray[i];
+myarray[i]=myarray[j];
+myarray[j]=temp;
+}
+}
+}
+for(i=0;i<max1;i++)
+{
+document.write(myarray[i]);
+document.write(linebreak);
+}
+var key=Number(prompt("enter the searching element"));
+var flag=0;
+for(i=0;i<max1;i++)
+{
+if (myarray[i]==key)
+{
+flag=1;
+}
+}
+if (flag==1)
+{
+document.write("element found");
+}
+else
+{
+document.write("element not found");
+}
+document.write(linebreak);
+document.write("from function");
+document.write(linebreak);
+for(i=0;i<max1;i++)
+{
+add(myarray);
+document.write(linebreak);
+}
+for(i=0;i<2;i++)
+{
+for(j=0;j<3;j++)
+{
+mularray[i][j]=Number(prompt("enter 2D array items"));
+}
+}
+document.write("2D array elements are:");
+document.write(linebreak);
+for(i=0;i<2;i++)
+{
+for(j=0;j<3;j++)
+{
+document.write(mularray[i][j]);
+document.write(linebreak);
+}
+}
+</script>
+</head>
+</html>

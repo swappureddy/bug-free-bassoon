@@ -1,0 +1,69 @@
+<html>
+<head>
+<script type="text/javaScript">
+function add()
+{
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=a+b;
+document.getElementById("answer").value=c;
+}
+function sub()
+{
+var a,b,d;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+d=a-b;
+document.getElementById("answer").value=d;
+}
+function mul()
+{
+var a,b,e;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+e=a*b;
+document.getElementById("answer").value=e;
+}
+function div()
+{
+var a,b,f;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+f=a/b;
+document.getElementById("answer").value=f;
+}
+function equ()
+{
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+if(a==b)
+{
+document.getElementById("answer").value="equal";
+}
+else
+{
+document.getElementById("answer").value="not equal";
+}
+}
+</script>
+</head>
+<body>
+number1:<input id="first">
+<br>
+number2:<input id="second">
+<br>
+<button onclick=add() name="addition">Add</button>
+<br>
+<button onclick=sub() name="subtraction">subtract</button>
+<br>
+<button onclick=mul() name="multiplication">Multiply</button>
+<br>
+<button onclick=div() name="division">Divide</button>
+<br>
+<button onclick=equ() name="equality">Equal</button>
+<br>
+<input id="answer">
+</body>
+</html>
